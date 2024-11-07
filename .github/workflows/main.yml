@@ -1,0 +1,17 @@
+name: Hello World Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "Enter your username"
+        required: true
+        default: "World"
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World with Username
+        run: echo "Hello, ${{ github.event.inputs.username }}!"
