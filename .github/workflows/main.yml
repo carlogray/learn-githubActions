@@ -7,6 +7,11 @@ on:
         description: "Enter your username"
         required: true
         default: "World"
+      verdadeirooufalse:
+        description: "Verdadeiro ou falso"
+        required: true
+        type: boolean
+        default: "false"
 
 jobs:
   say_hello:
