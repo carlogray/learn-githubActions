@@ -13,15 +13,15 @@ on:
         type: boolean
         default: "false"
       environment:
-        description: "Enter your username"
+        description: "Enter your environment"
         required: true
         default: ""
       seilaoque:
-        description: "Enter your username"
+        description: "Enter your seilaoque"
         required: true
         default: ""
       blablabla:
-        description: "Enter your username"
+        description: "Enter your blablabla"
         required: true
         default: ""
 
