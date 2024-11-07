@@ -12,6 +12,18 @@ on:
         required: true
         type: boolean
         default: "false"
+      environment:
+        description: "Enter your username"
+        required: true
+        default: ""
+      seilaoque:
+        description: "Enter your username"
+        required: true
+        default: ""
+      blablabla:
+        description: "Enter your username"
+        required: true
+        default: ""
 
 jobs:
   say_hello:
@@ -19,4 +31,9 @@ jobs:
 
     steps:
       - name: Print Hello World with Username
-        run: echo "Hello, ${{ github.event.inputs.username }}!"
+        run: |
+          echo "Hello, ${{ github.event.inputs.username }}!"
+          echo "Hello, ${{ github.event.inputs.verdadeirooufalse }}!"
+          echo "Hello, ${{ github.event.inputs.environment }}!"
+          echo "Hello, ${{ github.event.inputs.seilaoque }}!"
+          echo "Hello, ${{ github.event.inputs.blablabla }}!"
